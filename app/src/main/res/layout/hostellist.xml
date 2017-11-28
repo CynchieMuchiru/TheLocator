@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Layout_Page"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="5dp"
+
+        app:cardBackgroundColor="@color/card_view_each"
+        >
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/hostel_image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:scaleType="centerInside"
+        tools:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/hostel_image"
+        android:layout_marginLeft="3dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/hostel_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/hostel_image"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/hostel_name"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+    <TextView
+        android:id="@+id/hostel_price"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/hostel_name"
+        android:text="@string/hostel_price"
+        style="@style/Text_Edit"
+        />
+
+    <ImageView
+        android:id="@+id/hostel_fav"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        tools:src="@mipmap/ic_favorite_black_24dp"
+        android:paddingRight="4dp"
+        android:layout_centerVertical="true"
+
+        android:layout_toRightOf="@+id/hostel_price"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+     </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

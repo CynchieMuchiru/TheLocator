@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00994D</color>
+    <color name="colorPrimaryDark">#006633</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!--Our main Theme-->
+    <color name="Date_bar">#006633</color>
+    <color name="Hostel_name">#00BD5F</color>
+    <color name="card_view_each">#EBEBEB</color>
+    <color name="view_background">#EBEBEB</color>
+    <color name="title_color">#ffffff</color>
+    <color name="text_color">#000000</color>
+
+
+</resources>
