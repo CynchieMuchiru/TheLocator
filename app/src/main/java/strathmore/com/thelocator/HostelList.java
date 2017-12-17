@@ -13,7 +13,7 @@ public class HostelList {
     private String hostelprice;
     private String favouritesimg;
 
-    //The default constructor
+    //The housepic constructor
     public HostelList(){
 
     }

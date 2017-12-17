@@ -13,5 +13,14 @@
     <string name="lastname">Last Name</string>
     <string name="phonenumber">Phone No</string>
     <string name="emailaddress">Email Address</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!--Strings related to login-->
+    <string name="username">UserName</string>
+    <string name="password">Password</string>
+    <string name="login">Log In</string>
+    <string name="profile">Profile</string>
+    <string name="signup">Don\'t have account? Sign Up</string>
+
 
 </resources>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -23,6 +24,7 @@
         android:layout_width="wrap_content"
         android:gravity="center"
 
+
     >
     <TextView
         android:id="@+id/title"
@@ -30,17 +32,35 @@
         android:text="Fill in your Details"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textSize="40dp"
+        android:textSize="30dp"
         android:textStyle="bold"
         android:gravity="center"
         android:textColor="@color/text_color"
         android:layout_marginBottom="20dp"/>
+
+
+    <ImageView
+        android:id="@+id/name_icon"
+        android:layout_below="@+id/title"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/images"
+        android:contentDescription="@string/hostel_image"
+        android:layout_marginLeft="3dp"
+        android:layout_alignParentLeft="true"/>
     
     <EditText
         android:id="@+id/firstname"
+        android:layout_toRightOf="@+id/name_icon"
         android:layout_marginLeft="@dimen/layout_padding_left"
         android:layout_below="@+id/title"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:hint="@string/firstname"
         android:layout_marginBottom="20dp"
@@ -51,18 +71,34 @@
         android:layout_marginRight="@dimen/layout_padding_left"
         android:layout_below="@+id/title"
         android:layout_toRightOf="@+id/firstname"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:hint="@string/lastname"
         />
+
+    <ImageView
+        android:id="@+id/phone_icon"
+        android:layout_below="@+id/firstname"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/phone"
+        android:contentDescription="@string/hostel_image"
+        android:layout_marginLeft="3dp"
+        android:layout_alignParentLeft="true"/>
 
     <EditText
         android:id="@+id/phonenumber"
         android:hint="@string/phonenumber"
         android:layout_below="@+id/firstname"
+        android:layout_toRightOf="@+id/phone_icon"
         android:layout_marginLeft="@dimen/layout_padding_left"
-
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content" />
 
     <EditText
@@ -72,16 +108,17 @@
         android:layout_toRightOf="@+id/phonenumber"
         android:layout_marginLeft="@dimen/layout_padding_left"
         android:layout_marginRight="@dimen/layout_padding_left"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content" />
     <Button
         android:id="@+id/datepick"
+
         android:text="Pick date"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/phonenumber"
         android:layout_centerInParent="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:onClick="datePicker"
         />
     <EditText
@@ -100,9 +137,11 @@
         android:text="Plan a Visit"
         android:layout_below="@+id/datepicked"
         android:layout_marginTop="30dp"
+        android:background="@drawable/bg_button_rounded"
+        android:textColor="@color/title_color"
         android:layout_centerInParent="true"/>
 
 
-
 </RelativeLayout>
-    </RelativeLayout>
+
+  </RelativeLayout>
