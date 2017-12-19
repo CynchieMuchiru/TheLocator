@@ -29,7 +29,7 @@
             </intent-filter>
             -->
         </activity>
-        <activity android:name=".PlanVisit">
+        <activity android:name=".date.PlanVisit">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -41,9 +41,16 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".LogInActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".login.LoginPage"
+            android:label="@string/app_name" />
+        <activity android:name=".GoogleSignIn" />
+        <activity
+            android:name=".date.DateTimeFragment"
+            android:label="@string/title_activity_date_time_fragment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Sample"
+            android:label="@string/title_activity_sample"></activity>
     </application>
 
 </manifest>

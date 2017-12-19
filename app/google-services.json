@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1074995272187",
+    "project_id": "firebase-thelocator"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074995272187:android:30ac2290de682798",
+        "android_client_info": {
+          "package_name": "strathmore.com.thelocator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1074995272187-6qcgt4uc24vcd5dtp2p7vujq4hao3l80.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "strathmore.com.thelocator",
+            "certificate_hash": "a0a063eeaf90e9faad5b83f06d1822adacf7367c"
+          }
+        },
+        {
+          "client_id": "1074995272187-d74h0pq4opo132lp14v0l4us8v4kj9cb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn0jIDukOaWQjoOtyZ-hqmLno1miA2LNk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
